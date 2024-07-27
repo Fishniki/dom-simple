@@ -9,7 +9,7 @@
 <body>
     <div class="w-full h-screen flex justify-center items-center bg-red-200">
         <div class="flex items-center justify-center w-[50%] bg-yellow-100">
-            <img class="gambar w-52 h-52 cursor-pointer" onclick="Clck('red', this)" src="./img/image.png" alt="">
+            <img class="gambar1 w-52 h-52 cursor-pointer" onmouseover="Click()" onmouseout="ClickOut()" onclick="Clck('red', this)" src="./img/image.png" alt="">
             <img class="gambar w-52 h-52 cursor-pointer" onclick="Clck('yellow', this)" src="./img/image.png" alt="">
             <img class="gambar w-52 h-52 cursor-pointer" onclick="Clck('green', this)" src="./img/image.png" alt="">
         </div>
@@ -21,13 +21,24 @@
         </div>
     </div>
     <script>
-        function Clck(color, element) {
-            if (element.style.backgroundColor === color) {
-                element.style.backgroundColor = '';
-            }else {
-                element.style.backgroundColor = color
-            }
+        // function Clck(color, element) {
+        //     if (element.style.backgroundColor === color) {
+        //         element.style.backgroundColor = '';
+        //     }else {
+        //         element.style.backgroundColor = color
+        //     }
             
+        // }
+
+        // function Click() {
+        //     const gambar = document.querySelector('.gambar1')
+        //     gambar.style.position = 'absolute'
+        //     gambar.style.top = 0
+        // }
+
+        function ClickOut() {
+            const gambarout = document.querySelector('.gambar1')
+            gambar.style.backgroundColor = 'red' 
         }
     </script>
 </body>
